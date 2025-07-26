@@ -1,0 +1,17 @@
+public class Main{
+    static boolean isSorted(int[] arr){
+        for(int i=0;i<arr.length-1;i++){//arr.length-1 nhi kkrenge to out of bound o jayega 
+        if(arr[i]>arr[i+1]){//ye pehla element aur uske bad wala check krta hai
+                return false;
+            }
+            
+        }
+        return true;
+    }
+    
+    public static void main(String args[]){
+        int[] arr={1,3,5,9,10};
+        System.out.println("array sorted: "+isSorted(arr));
+    }
+}
+
