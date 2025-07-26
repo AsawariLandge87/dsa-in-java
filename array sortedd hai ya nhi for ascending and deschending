@@ -1,7 +1,7 @@
 public class Main{
     static boolean isSorted(int[] arr){
         for(int i=0;i<arr.length-1;i++){//arr.length-1 nhi kkrenge to out of bound o jayega 
-        if(arr[i]>arr[i+1]){//ye pehla element aur uske bad wala check krta hai
+        if(arr[i]>arr[i+1]){//ye pehla element aur uske bad wala check krta hai// suppose esme (arr[i]<arr[i+1])kr de to ye decending ke liye ho jyega
                 return false;
             }
             
